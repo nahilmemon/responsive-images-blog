@@ -1,0 +1,2 @@
+# Responsive Images Blog
+This project involved optimizing a photo journal blog for different device widths and pixel density ratios. This project was completed as a part of the Responsive Images course by Udacity.

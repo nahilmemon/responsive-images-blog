@@ -1,0 +1,208 @@
+/* Headings */
+header {
+  margin: 0 auto;
+  max-width: 50em;
+  text-align: center;
+  /* Flexbox display */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Flexbox center align*/
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Flexbox center justification */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* Flexbox wrap*/
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+h1 {
+  display: inline;
+  width: calc(100%-50);
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+/* SVG Snowflake Logo */
+#logo {
+  fill: #f26968;
+  stroke: #f26968;
+  stroke-width:2;
+}
+
+#logo-link:hover > #logo {
+  fill: #6cbf84;
+  stroke: #6cbf84;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.jumbo-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Figures */
+figure {
+  margin: 1em 0;
+  text-align: center;
+}
+
+figcaption {
+  color: #f26968;
+  font-style: italic;
+}
+
+/* Post Contents */
+.post-content {
+  max-width: 53em;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
+
+.post-content > p {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  max-width: 50em;
+  margin: 1em auto 0 auto;
+  text-align: center;
+  border-top: solid 2px #f26968;
+}
+
+/* Zocial social media icons */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+/* Footer Social Media Links */
+.social-media-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Flexbox display */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Flexbox center align*/
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Flexbox center justification */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.social-media-container > a {
+  display: block;
+  list-style-type: none;
+  width: 20%;
+  /* Flexbox item specs */
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .social-media-container {
+    height: 48px;
+  }
+  .social-media-container > a {
+    min-width: 48px;
+    padding: calc((48px - 1.25em)/2) 0;
+  }
+}
+
+/* Text highlight color */
+::selection {
+  background: #6cbf84;
+}
+
+::-moz-selection {
+  background: #6cbf84;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #f26968;
+}
+
+a:hover {
+  color: #6cbf84;
+}
+
+/* Typography */
+body {
+  font-size: 1em;
+  line-height: 1.25;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  color: #206434;
+  margin: 0;
+}
+
+@media (min-width: 43.75em) {
+  body {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+
+h1, h2 {
+  font-family: 'Cardo', serif;
+  color: #f26968;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+}
